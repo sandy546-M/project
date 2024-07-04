@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalki</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <button id="create-group-btn">Create Group</button>
+            <ul id="group-list"></ul>
+        </div>
+        <div class="main-content">
+            <div class="notes-header">
+                <h2 id="group-title"></h2>
+            </div>
+            <div id="notes-list"></div>
+            <div class="note-input">
+                <textarea id="note-text" placeholder="My first assignment"></textarea>
+                <button id="send-note-btn" disabled>send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup for creating group -->
+    <div id="group-popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup">&times;</span>
+            <input type="text" id="group-name" placeholder="Group Name">
+            <input type="color" id="group-color" value="#ffffff">
+            <button id="create-group-confirm">Create</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
